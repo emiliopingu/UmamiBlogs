@@ -23,7 +23,9 @@
             <img src="{{ $receta->imagen}}" class="imagenReceta">
            <h5>{{ $receta->nombre }}</h5>
         <p><strong> * Valoracion: {{ $receta->valoracion_int}} /10</strong></p>
-
+            <form action="{{ route($receta->id) }}" method="POST">
+        <a class="btn btn-info" href="{{route('China.show',$receta->id) }}">Ver receta</a>
+        </form>
         <?php
             /*{{ route('china.show') }}
             //Se le da un valor a las variables
