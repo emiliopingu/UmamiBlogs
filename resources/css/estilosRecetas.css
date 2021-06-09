@@ -1,0 +1,129 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .center {
+    justify-content: center;
+  }
+  
+  .left {
+    justify-content: flex-start;
+  }
+  
+  .right {
+    justify-content: flex-end;
+  }
+  
+  .between {
+    justify-content: space-between;
+  }
+  
+  .around {
+    justify-content: space-around;
+  }
+  
+  .middle {
+    align-items: center;
+  }
+  
+  .wrap {
+    flex-wrap: wrap;
+  }
+  
+  .top {
+    align-items: flex-start;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+ 
+  
+  .logo {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+  }
+  
+  .logo--img {
+    height: 25px;
+    width: 25px;
+  }
+  
+  
+  .comida {
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  .comidaTitulo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+ 
+  
+  .listaComida {
+    padding: 2rem 0;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .comida {
+    border: 1px solid #A5AEAE;
+    width: 30%;
+    padding: 1rem;
+  }
+  
+  .comida:hover {
+    transform: scale(1.1);
+    border: 0px;
+  }
+  
+  .comida--logo {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+  }
+  
+  .comida--logo--img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .nombreComida {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 1rem 0 0 0;
+  }
+
+  @media(max-width: 700px) {
+
+    .comida--logo--img{
+        display: none;
+    }
+
+    .nombreComida {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        
+    }
+      
+      
+}
