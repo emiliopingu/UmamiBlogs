@@ -24,21 +24,17 @@
             </div>
             <div class="mi-navegacion-logo">
                 <a href="index">
-                    <img alt="Logo de la empresa" src="https://drive.google.com/uc?export=view&id=11I3BFF1eLU7WjNeJn-0AYZrA-Aq7l_hV" class="img1">
-                    <img alt="Logo de la empresa RESPONSIVO" src="https://drive.google.com/uc?export=view&id=1en-ppZGRtkPJ-0WtDqVr4aVx4NJWL8wU" class="img2">
+                    <img alt="Logo de la empresa RESPONSIVO" src="https://drive.google.com/uc?export=view&id=11I3BFF1eLU7WjNeJn-0AYZrA-Aq7l_hV" class="img1">
+                    <img alt="Logo de la empresa RESPONSIVO" src="img/logoletra.png" class="img2">
                 </a>
-            </div>
-            <ul class="mi-navegacion-items">
+                <ul class="mi-navegacion-items">
                 <li>
-                    <a href="index">Index</a>
+                <a class="btn btn-primary" href="{{ route('$ruta') }}"> Volver a la seleccion de recetas</a>
                 </li>
-                <li>
-                    <a href="recetas">Recetas</a>
-                </li>
-                <li>
-                    <a href="sobreNosotros">Sobre nosotros</a>
-                </li>
+
             </ul>
+
+            </div>
         </nav>
     </header>
 
@@ -48,8 +44,11 @@
 
 
 
+   <!-- <footer>
+            <h3>Todo los derechos reservados</h3>
+            <p>Emilio Hidalgo Belmonte</p>
+        </footer>-->
 
-
-        <script src="{{ asset('js/funciones.js') }}"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

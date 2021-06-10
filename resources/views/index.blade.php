@@ -62,6 +62,9 @@
             <p>Emilio Hidalgo Belmonte</p>
         </footer>
 
-        <script src="js/app.js"></script>
+        <script src="{{ asset('js/funciones.js') }}">
+
+
+    </script>
     </body>
 </html>

@@ -20,12 +20,12 @@ footer {
       text-align: center;
       font-family: Arial;
     }
-    
+
   }
-  
+
   @media(max-width: 768px) {
     footer{
       background-color: rgb(77, 29, 58);
     }
-    
+
   }
