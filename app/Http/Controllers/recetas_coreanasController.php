@@ -14,9 +14,9 @@ class recetas_coreanasController extends Controller
      */
     public function index()
     {
-        $recetas_coreanas = recetas_coreanas::latest()->paginate(5);
+        $recetas_coreana = recetas_coreanas::latest()->paginate(5);
 
-        return view('Corea.index', compact('recetas_coreanas'))
+        return view('Corea.index', compact('recetas_coreana'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -50,9 +50,9 @@ class recetas_coreanasController extends Controller
      * @param  \App\Models\comida_china  $comida_china
      * @return \Illuminate\Http\Response
      */
-    public function show(recetas_coreanas $recetas_coreanas)
+    public function show(recetas_coreanas $recetas_coreana)
     {
-        return view('Corea.show',compact('recetas_coreanas'));
+        return view('Corea.show', compact('recetas_coreana'));
     }
 
 }

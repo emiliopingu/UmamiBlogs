@@ -14,9 +14,9 @@ class recetas_tailandesasController extends Controller
      */
     public function index()
     {
-        $recetas_tailandesas = recetas_tailandesas::latest()->paginate(5);
+        $recetas_tailandesa = recetas_tailandesas::latest()->paginate(5);
 
-        return view('Tailandia.index', compact('recetas_tailandesas'))
+        return view('Tailandia.index', compact('recetas_tailandesa'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -50,8 +50,8 @@ class recetas_tailandesasController extends Controller
      * @param  \App\Models\recetas_tailandesas  $recetas_tailandesas
      * @return \Illuminate\Http\Response
      */
-    public function show(recetas_tailandesas $recetas_tailandesas)
+    public function show(recetas_tailandesas $recetas_tailandesa)
     {
-        return view('Tailandia.show',compact('recetas_tailandesas'));
+        return view('Tailandia.show',compact('recetas_tailandesa'));
     }
 }

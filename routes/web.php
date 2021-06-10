@@ -32,9 +32,13 @@ Route::get('/sobreNosotros', function () {
 Route::get('/index', function () {
     return view('index');
 });
-Route::get('/show', function () {
-    return view('china.show');
+
+Route::get('/recetas_chinas/recetas', function () {
+    return view('index');
 });
+
+
+
 /*
 Route::get('/comida_china', function () {
     return view('comida_china');

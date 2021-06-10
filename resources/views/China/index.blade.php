@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+   <div class="content">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -23,16 +24,8 @@
             <img src="{{ $receta->imagen}}" class="imagenReceta">
            <h5>{{ $receta->nombre }}</h5>
         <p><strong> * Valoracion: {{ $receta->valoracion_int}} /10</strong></p>
-            <form action="{{ route($receta->id) }}" method="POST">
-        <a class="btn btn-info" href="{{route('China.show',$receta->id) }}">Ver receta</a>
-        </form>
-        <?php
-            /*{{ route('china.show') }}
-            //Se le da un valor a las variables
-        $a = "{{ $receta->nombre }}";
-        $b = "{{ $receta->valoracion_int}}";
-        echo "<a href='pagina1.blade.php?a=$a&b=$b'>Enviar variables</a>";*/
-           ?>
+        <a class="btn btn-info" href="{{route('recetas_chinas.show', $receta->id) }}">Ver receta</a>
+
         </td>
         @endforeach
     </table>
@@ -44,4 +37,4 @@
 
 @endsection
 
-
+</div>

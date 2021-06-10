@@ -11,18 +11,18 @@
     </div>
 
     <table class="table table-bordered">
-        @foreach ($recetas_tailandesas as $receta)
+        @foreach ($recetas_tailandesa as $receta)
         <td>
             <img src="{{ $receta->imagen}}" class="imagenReceta">
            <h5>{{ $receta->nombre }}</h5>
         <p><strong> * Valoracion: {{ $receta->valoracion_int}} /10</strong></p>
-        <a class="btn btn-info" href=" ">Ver receta</a>
+        <a class="btn btn-info" href="{{route('recetas_tailandesas.show', $receta->id) }}">Ver receta</a>
 
         </td>
         @endforeach
     </table>
 
-    {!! $recetas_tailandesas->links() !!}
+    {!! $recetas_tailandesa->links() !!}
 
 
 @endsection
