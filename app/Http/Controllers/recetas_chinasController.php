@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Support\Facades\DB;
 use App\Models\recetas_chinas;
 use Illuminate\Http\Request;
@@ -10,7 +9,7 @@ class recetas_chinasController extends Controller
 {
     public function index()
     {
-        $recetas_china = recetas_chinas::latest()->paginate(5);
+        $recetas_china = recetas_chinas::latest()->paginate(2);
 
         return view('China.index', compact('recetas_china'));
     }

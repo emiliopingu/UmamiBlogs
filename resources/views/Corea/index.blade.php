@@ -21,7 +21,7 @@
         @endforeach
     </table>
 
-    {!! $recetas_coreana->links() !!}
+    {!! $recetas_coreana->links('vendor.pagination.bootstrap-4') !!}
 
 
 @endsection

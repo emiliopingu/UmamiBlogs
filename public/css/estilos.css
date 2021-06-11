@@ -119,6 +119,9 @@ nav {
 }
 
 
+.pagination{
+    background-color: white;
+}
 .img2{
     display: block;
 }

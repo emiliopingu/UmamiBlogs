@@ -22,7 +22,7 @@
         @endforeach
     </table>
 
-    {!! $recetas_tailandesa->links() !!}
+    {!! $recetas_tailandesa->links('vendor.pagination.bootstrap-4') !!}
 
 
 @endsection

@@ -5,7 +5,6 @@
     <html xmlns="http://www.w3.org/1999/xhtml" lang="es"></html>
     <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estiloFooter.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/estiloShow.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial/scale=1.0">
     <script type="text/javascript" src="lib/jquery-3.4.0.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>

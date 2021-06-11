@@ -14,7 +14,7 @@ class recetas_coreanasController extends Controller
      */
     public function index()
     {
-        $recetas_coreana = recetas_coreanas::latest()->paginate(5);
+        $recetas_coreana = recetas_coreanas::latest()->paginate(2);
 
         return view('Corea.index', compact('recetas_coreana'))
             ->with('i', (request()->input('page', 1) - 1) * 5);

@@ -51,7 +51,7 @@
 
 
 
-    {!! $recetas_china->links() !!}
+    {!! $recetas_china->links('vendor.pagination.bootstrap-4') !!}
 
 @endsection
 

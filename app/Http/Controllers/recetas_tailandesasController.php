@@ -17,7 +17,7 @@ class recetas_tailandesasController extends Controller
         $recetas_tailandesa = recetas_tailandesas::latest()->paginate(5);
 
         return view('Tailandia.index', compact('recetas_tailandesa'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 2);
     }
 
     /**
