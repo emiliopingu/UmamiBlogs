@@ -14,10 +14,10 @@ class recetas_tailandesasController extends Controller
      */
     public function index()
     {
-        $recetas_tailandesa = recetas_tailandesas::latest()->paginate(5);
+        $recetas_tailandesa = recetas_tailandesas::latest()->paginate(3);
 
-        return view('Tailandia.index', compact('recetas_tailandesa'))
-            ->with('i', (request()->input('page', 1) - 1) * 2);
+        return view('Tailandia.index', compact('recetas_tailandesa'));
+
     }
 
     /**

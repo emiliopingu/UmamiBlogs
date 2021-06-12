@@ -63,16 +63,10 @@ Route::resource('recetas_coreanas', recetas_coreanasController::class);
 Route::resource('recetas_japonesas', recetas_japonesasController::class);
 Route::resource('recetas_tailandesas', recetas_tailandesasController::class);
 Route::resource('recetas_chinas', recetas_chinasController::class);
+ Route::get('recetas_chinas/buscador','recetas_chinasController@buscador');
 
 
-/*
-  <form action="{{ route('recetas_chinas.show',$recetas_chinas->id) }}" method="POST">
-   <a class="btn btn-info" href="{{route(China.show,$recetas_chinas->id) }}">Ver receta</a>
-            <a class="btn btn-info" href="{{ route('china.show',$recetas_chinas->id) }}">Ver receta</a>
 
-        </form>
-
-*/
 
 
 

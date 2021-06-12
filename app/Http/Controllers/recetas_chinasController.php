@@ -9,7 +9,7 @@ class recetas_chinasController extends Controller
 {
     public function index()
     {
-        $recetas_china = recetas_chinas::latest()->paginate(2);
+        $recetas_china = recetas_chinas::latest()->paginate(3);
 
         return view('China.index', compact('recetas_china'));
     }
@@ -52,21 +52,9 @@ class recetas_chinasController extends Controller
         return view('China.show', compact('recetas_china'));
     }
 
-
-    function find(Request $request)
-    {
-        $request->validate([
-            'query' => 'required|min:2'
-        ]);
-
-        $search_text = $request->input('query');
-        $recetas_china = DB::table('umamiblog')
-            ->where('nombre', 'LIKE', '%' . $search_text . '%')
-            ->paginate(2);
-        return view('search', ['recetas_china' => $recetas_china]);
+    public function buscador(Request $request){
+        $recetas_china    =   recetas_chinas::where("recetas_china",'like',$request->texto."%")->take(10)->get();
+        return view("China.find",compact("recetas_china"));
     }
-    public function volverIndex()
-    {
-        return view('./index');
-    }
+
 }

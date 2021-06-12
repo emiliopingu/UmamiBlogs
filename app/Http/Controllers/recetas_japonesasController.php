@@ -14,10 +14,9 @@ class recetas_japonesasController extends Controller
      */
     public function index()
     {
-        $recetas_japonesa = recetas_japonesas::latest()->paginate(2);
+        $recetas_japonesa = recetas_japonesas::latest()->paginate(3);
 
-        return view('Japon.index', compact('recetas_japonesa'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('Japon.index', compact('recetas_japonesa'));
     }
 
     /**
