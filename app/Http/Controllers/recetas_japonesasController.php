@@ -19,6 +19,11 @@ class recetas_japonesasController extends Controller
         return view('Japon.index', compact('recetas_japonesa'));
     }
 
+    public function create()
+    {
+        return view('japon.create');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -39,7 +44,7 @@ class recetas_japonesasController extends Controller
          recetas_japonesas::create($request->all());
 
           // with() pasamos datos a la vista
-          return redirect()->route('Japon.index')
+          return redirect()->route('recetas_japonesas.index')
                         ->with('success','recetas_japonesas created successfully.');
     }
 

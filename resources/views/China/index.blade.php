@@ -27,13 +27,15 @@
     <table class="table table-bordered">
         @foreach ($recetas_china as $receta)
 
-        <td>
+        <td  class="table-active">
         <img alt="{{ $receta->nombre }}" src="{{ $receta->imagen}}" class="imagenReceta">
            <h5>{{ $receta->nombre }}</h5>
         <p><strong> * Valoracion: {{ $receta->valoracion_int}} /10</strong></p>
         <a class="btn btn-info" href="{{route('recetas_chinas.show', $receta->id) }}">Ver receta</a>
 
         </td>
+</br>
+
         @endforeach
     </table>
     </div>

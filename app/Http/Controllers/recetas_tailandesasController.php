@@ -19,7 +19,10 @@ class recetas_tailandesasController extends Controller
         return view('Tailandia.index', compact('recetas_tailandesa'));
 
     }
-
+    public function create()
+    {
+        return view('tailandia.create');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -40,8 +43,8 @@ class recetas_tailandesasController extends Controller
              recetas_tailandesas::create($request->all());
 
           // with() pasamos datos a la vista
-          return redirect()->route('Tailandia.index')
-                        ->with('success','recetas_coreanas created successfully.');
+          return redirect()->route('recetas_tailandesas.index')
+                        ->with('success','recetas_tailandesas created successfully.');
     }
 
     /**

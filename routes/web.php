@@ -5,6 +5,7 @@ use App\Http\Controllers\recetas_chinasController;
 use App\Http\Controllers\recetas_coreanasController;
 use App\Http\Controllers\recetas_japonesasController;
 use App\Http\Controllers\recetas_tailandesasController;
+use GuzzleHttp\Promise\Create;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,6 +65,7 @@ Route::resource('recetas_japonesas', recetas_japonesasController::class);
 Route::resource('recetas_tailandesas', recetas_tailandesasController::class);
 Route::resource('recetas_chinas', recetas_chinasController::class);
  Route::get('recetas_chinas/buscador','recetas_chinasController@buscador');
+
 
 
 

@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
 use App\Models\recetas_chinas;
 use Illuminate\Http\Request;
 
@@ -9,9 +8,14 @@ class recetas_chinasController extends Controller
 {
     public function index()
     {
-        $recetas_china = recetas_chinas::latest()->paginate(3);
+        $recetas_china = recetas_chinas::latest()->paginate(4);
 
         return view('China.index', compact('recetas_china'));
+    }
+
+    public function create()
+    {
+        return view('China.create');
     }
 
 
@@ -32,13 +36,13 @@ class recetas_chinasController extends Controller
             'ingredientes' => 'required',
             'valoracion_text' => 'required',
             'valoracion_int' => 'required',
-            'imagen' => 'required',
+
         ]);
         // Recupera todos los datos de request en un array
         recetas_chinas::create($request->all());
 
         // with() pasamos datos a la vista
-        return redirect()->route('China.index')
+        return redirect()->route('recetas_chinas.index')
             ->with('success', 'recetas_china created successfully.');
     }
 
@@ -54,7 +58,7 @@ class recetas_chinasController extends Controller
 
     public function buscador(Request $request){
         $recetas_china    =   recetas_chinas::where("recetas_china",'like',$request->texto."%")->take(10)->get();
-        return view("China.find",compact("recetas_china"));
+        return view("recetas_chinas.find",compact("recetas_china"));
     }
 
 }

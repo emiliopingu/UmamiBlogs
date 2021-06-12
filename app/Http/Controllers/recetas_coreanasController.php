@@ -19,6 +19,11 @@ class recetas_coreanasController extends Controller
         return view('Corea.index', compact('recetas_coreana'));
     }
 
+    public function create()
+    {
+        return view('Corea.create');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -39,7 +44,7 @@ class recetas_coreanasController extends Controller
          recetas_coreanas::create($request->all());
 
           // with() pasamos datos a la vista
-          return redirect()->route('Corea.index')
+          return redirect()->route('recetas_coreanas.index')
                         ->with('success','recetas_coreanas created successfully.');
     }
 
