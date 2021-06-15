@@ -47,8 +47,12 @@
 
             <div class="texto">
                 <h1>Bienvenido</h1>
-                <input type="button" id="boton" value="Mostrar Info">
-                <div id="parrafos"></div>
+                <br>
+                <div>Hola buenas y bienvenidos a mi pagina donde hablaremos
+                y valoraremos recetas asiaticas con un toque mas desinhibido.Las recetas seran
+                chinas,coreanas,tailandesas y coreanas.Esto es una version alfa de nuestra pagina ya
+                que en un futuro tendra más actualizaciones, así que disfrunten de la experiencia
+                </div>
 
             </div>
           </div>

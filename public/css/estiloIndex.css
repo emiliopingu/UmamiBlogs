@@ -14,9 +14,8 @@
   border-radius: 50%;
   background-color: darksalmon;
   margin-top: 2%;
+  margin-bottom: 5%;
 
- 
-  
 }
 
 .imagen{
@@ -26,14 +25,14 @@
   height:200px;
   width:200px;
 }
-      
+
 .texto{
   order:0;
   flex:0 1 auto;
   align-self:auto;
   height:200px;
   width:400px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:PMingLiU-ExtB font;
   text-align: justify;
 }
 
@@ -42,7 +41,7 @@
   font-size: x-large;
 
 }
-  
+
 
 .imagen img{
   border-radius: 3%;
@@ -56,25 +55,18 @@
     justify-content:space-around;
     align-items:center;
     align-content:flex-start;
-    height:90vh; 
+    height:90vh;
     border-radius: 50%;
     background-color: rgb(196, 105, 238);
     margin-top: 2%;
+    border-bottom: 20%;
   }
 }
 
 @media(max-width: 768px) {
-  
-  .container{
-    display:flex;
-    flex-direction:column-reverse;
-    flex-wrap:nowrap;
-    justify-content:space-around;
-    align-items:center;
-    align-content:flex-start;
-    height:80vh; 
-    border-radius: 10%;
-    background-color: darksalmon;
+
+  .imagen{
+      display: none;
   }
- 
+
 }
