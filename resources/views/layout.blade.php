@@ -9,7 +9,7 @@
     <script type="text/javascript" src="lib/jquery-3.4.0.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <title>Recetas</title>
 
 </head>
 

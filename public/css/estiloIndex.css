@@ -57,7 +57,7 @@
     align-content:flex-start;
     height:90vh;
     border-radius: 50%;
-    background-color: rgb(196, 105, 238);
+    background-color: darksalmon(196, 105, 238);
     margin-top: 2%;
     border-bottom: 20%;
   }

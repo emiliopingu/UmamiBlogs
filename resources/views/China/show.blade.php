@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <html xmlns="http://www.w3.org/1999/xhtml" lang="es"></html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+
+    </html>
     <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estilosIndex.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estiloFooter.css') }}" rel="stylesheet">
@@ -32,57 +34,51 @@
             <ul class="mi-navegacion-items">
                 <li>
 
-                   <a class="btn btn-primary" href="{{ route('recetas_chinas.index') }}"> Volver a la pagina de recetas</a>
+                    <a class="btn btn-primary" href="{{ route('recetas_chinas.index') }}"> Volver a la pagina de recetas</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-    <div class="container">
-    <div class="centro">
-    <div>
-        <img src="{{$recetas_china->imagen}}" class="imagenReceta">
+        <div class="centro">
+            <div>
+                <img src="{{$recetas_china->imagen}}" class="imagenReceta">
+            </div>
+            <h2>{{$recetas_china->nombre}}</h2>
+            <br>
+            <p><strong>Ingredientes : </strong>{{$recetas_china->ingredientes}}</p>
+            <br>
+            <h4>Como elaborarlo</h4>
+            <div class="parrafo">
+                <p><strong></strong>{{$recetas_china->descripcion}}</p>
+            </div>
+
+            <br>
+            <br>
+            <div class="valoracion">
+                <h4>Valoración</h4>
+                <p>{{$recetas_china->valoracion_text}} </p>
+                <br>
+                <p>Valoración : {{$recetas_china->valoracion_int}}</p>
+            </div>
+            <br>
+
+        </div>
+
+
+
+
     </div>
-    <h2>{{$recetas_china->nombre}}</h2>
-    <br>
-    <p><strong>Ingredientes : </strong>{{$recetas_china->ingredientes}}</p>
-    <br>
-    <h4>Como elaborarlo</h4>
-    <div class="parrafo">
-        <p><strong></strong>{{$recetas_china->descripcion}}</p>
-    </div>
-
-    <br>
-    <br>
-    <div class="valoracion">
-        <h4>Valoración</h4>
-        <p>{{$recetas_china->valoracion_text}} </p>
-        <br>
-        <p>Valoración : {{$recetas_china->valoracion_int}}</p>
-    </div>
-    <br>
-
-</div>
-
-
-    </div>
-
-    </div>
 
 
 
-   <!-- <footer>
+    <!-- <footer>
             <h3>Todo los derechos reservados</h3>
             <p>Emilio Hidalgo Belmonte</p>
         </footer>-->
 
-        <script src="js/app.js"></script>
-    </body>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
-
-
-
-
-
-

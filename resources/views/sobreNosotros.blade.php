@@ -39,7 +39,7 @@
         <div class="container">
 
             <div class="item-0">
-                <img alt="Logo Index" src="img/sobreNosotros.png">
+                <img alt="Logo Ramen" src="img/logoRamen.png">
             </div>
 
             <div class="item-1">

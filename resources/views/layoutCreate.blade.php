@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Laravel Notas Application - Cenec</title>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="es"></html>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
