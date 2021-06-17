@@ -40,18 +40,15 @@
 
 
         <div class="container">
-
-            <div class="imagen">
-                <img alt="Logo Index" src="{{asset('img/imagenPrincipal1.png')}}">
-            </div>
-
             <div class="texto">
-                <h1>Bienvenido</h1>
-                <br>
-                <div>Hola buenas y bienvenidos a mi pagina donde hablaremos
+
+
+                <div>
+                Hola buenas y bienvenidos a mi pagina donde hablaremos
                 y valoraremos recetas asiaticas con un toque mas desinhibido.Las recetas seran
                 chinas,coreanas,tailandesas y coreanas.Esto es una version alfa de nuestra pagina ya
                 que en un futuro tendra más actualizaciones, así que disfrunten de la experiencia
+
                 </div>
 
             </div>
